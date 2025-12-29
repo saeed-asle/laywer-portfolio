@@ -33,14 +33,16 @@
 // export default App
 
 import React from 'react';
-import { LanguageProvider, useLanguage } from './component/LanguageContext';
-import Navigation from './component/portfolio/Navigation';
-import Hero from './component/portfolio/Hero';
-import About from './component/portfolio/About';
-import Services from './component/portfolio/Services';
-import Testimonials from './component/portfolio/Testimonials';
-import Contact from './component/portfolio/Contact';
-import Footer from './component/portfolio/Footer';
+import { LanguageProvider, useLanguage } from './components/LanguageContext';
+import Navigation from './components/portfolio/Navigation';
+import Hero from './components/portfolio/Hero';
+import About from './components/portfolio/About';
+import Services from './components/portfolio/Services';
+import Testimonials from './components/portfolio/Testimonials';
+import Contact from './components/portfolio/Contact';
+import Footer from './components/portfolio/Footer';
+import ExperienceSection from './components/portfolio/ExperienceSection';
+
 
 function HomeContent() {
   const { t } = useLanguage();
@@ -51,6 +53,8 @@ function HomeContent() {
       <Hero />
       <About />
       <Services />
+            <ExperienceSection />
+
       <Testimonials />
       <Contact />
       <Footer />

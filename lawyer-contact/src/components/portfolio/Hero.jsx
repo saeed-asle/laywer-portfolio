@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '../LanguageContext';
 import { Scale, ChevronDown, Award, TrendingUp, Target, Sparkles } from 'lucide-react';
 import ThreeBackground from './ThreeBackground';
-
+import saeed from '../../assets/saeed.jpg'; // or .png/.webp etc
 export default function Hero() {
   const { t } = useLanguage();
 
@@ -19,15 +19,12 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Three.js animated background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0a0f1a] via-[#0f1820] to-[#1a1f2e]">
         <ThreeBackground />
       </div>
 
-      {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0f1a]/50 to-[#0a0f1a]" style={{ zIndex: 2 }} />
 
-      {/* Animated glow orbs */}
       <motion.div
         className="absolute top-20 left-20 w-[600px] h-[600px] rounded-full blur-3xl"
         style={{
@@ -167,7 +164,7 @@ export default function Hero() {
                 {/* Image */}
                 <div className="relative h-full rounded-[3rem] overflow-hidden border-4 border-[#c9a227]/30 shadow-2xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop&crop=faces"
+                    src={saeed}
                     alt="Attorney Amit Rosenberg"
                     className="w-full h-full object-cover"
                   />
